@@ -2,7 +2,7 @@ import urllib2
 import json
 import codecs
 
-api_key="80e5060e2c10c6d000cf7606229ae642"
+api_key="***"
 
 file2 = codecs.open("somelyrics", "w", encoding='utf8')
 
