@@ -4,8 +4,8 @@ import codecs
 
 
 
-api_key="80e5060e2c10c6d000cf7606229ae642"
-#url="http://api.musixmatch.com/ws/1.1/matcher.lyrics.get?q_track=+unicode(q_track)+&q_artist=+unicode(q_artist)
+api_key="***"
+
 
 
 count=0
