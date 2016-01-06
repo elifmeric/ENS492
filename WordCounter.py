@@ -1,14 +1,14 @@
-import re
 from collections import Counter
+import re
 import codecs
-for year in range(1947,2015):
+for year in range(1947,1948):
     file3 = codecs.open("words-"+str(year)+".txt", "w", encoding='utf8')
 
 
     def openfile(filename):
-        fl = open(filename, "r+")
-        str = fl.read()
-        fl.close()
+        fh = open(filename, "r+")
+        str = fh.read()
+        fh.close()
         return str
 
     def removegarbage(str):
@@ -23,12 +23,12 @@ for year in range(1947,2015):
             cnt[word] += 1
         return cnt
 
-    def main(filename, freq):
-        text = openfile(filename)
-        text = removegarbage(txt)
-        words = text.split(' ')
-        bin = getwordbins(words)
-        for key, value in bin.most_common(freq):
+    def main(filename, topwords):
+        txt = openfile(filename)
+        txt = removegarbage(txt)
+        words = txt.split(' ')
+        bins = getwordbins(words)
+        for key, value in bins.most_common(topwords):
             print key,value
             file3.write(unicode(key) + " " + unicode(value) + "\n")
         

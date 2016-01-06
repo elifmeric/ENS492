@@ -2,11 +2,11 @@ import urllib2
 import json
 import codecs
 
-api_key="***"
+api_key="80e5060e2c10c6d000cf7606229ae642"
 
 file2 = codecs.open("somelyrics", "w", encoding='utf8')
 
-for year in range(1947,2014):
+for year in range(1950,2014):
 
     file2 = codecs.open("lyrics"+unicode(year)+".txt", "w", encoding='utf8')
 
